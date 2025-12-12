@@ -82,3 +82,4 @@
 # test_foo_2([8,24,6,2])
 # #[8, 24, 6, 2, 1]
 # test_foo_2()
+#https://ru.stackoverflow.com/questions/1032284/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0-pycharm-github
