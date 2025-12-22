@@ -17,7 +17,6 @@
 # число - 5
 # конец программы
 #https://keyboard-type-simulator.vercel.app/learn - клавиатурный тренажер
-from pyexpat.errors import messages
 
 #break - завершает цикл
 # num = 1
