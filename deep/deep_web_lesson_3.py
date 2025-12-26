@@ -86,10 +86,10 @@
 # main()\
 #передача множественных аргументов
 #Доразобрать!!! - https://metanit.com/python/tutorial/2.15.php
-def say_hello(name="Tom", age = 12):
-    print(f"Hello, {name}")
-    print(f'{name}s age is {age}')
-
-
-say_hello(age=12)  # здесь параметр name будет иметь значение "Tom"
-say_hello("Bob",12)  # здесь name = "Bob"
+# def say_hello(name="Tom", age = 12):
+#     print(f"Hello, {name}")
+#     print(f'{name}s age is {age}')
+#
+#
+# say_hello(age=12)  # здесь параметр name будет иметь значение "Tom"
+# say_hello("Bob",12)  # здесь name = "Bob"
