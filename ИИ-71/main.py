@@ -39,37 +39,37 @@
 
 # сортировка слиянием
 
-def merge_sort(arr):
-    if len(arr) <= 1:
-        return arr
-
-    mid = len(arr) // 2
-    left = merge_sort(arr[:mid])
-    right = merge_sort(arr[mid:])
-    return merge(left,right)
-
-
-def merge(left,right):
-    sorted_lst = []
-    i = j = 0
-
-    while i < len(left) and j < len(right):
-        if left[i] < right[j]:
-            sorted_lst.append(left[i])
-            i += 1
-        else:
-            sorted_lst.append(right[j])
-            j += 1
-
-    sorted_lst.extend(left[i:])
-    sorted_lst.extend(right[j:])
-    return sorted_lst
-
-
-arry = [10,3,5,2,56,8,45,86,3]
-
-sorted_lst = merge_sort(arry)
-
-print(f'un sorted - {arry}\n'
-      f'sorted List {sorted_lst}')
+# def merge_sort(arr):
+#     if len(arr) <= 1:
+#         return arr
+#
+#     mid = len(arr) // 2
+#     left = merge_sort(arr[:mid])
+#     right = merge_sort(arr[mid:])
+#     return merge(left,right)
+#
+#
+# def merge(left,right):
+#     sorted_lst = []
+#     i = j = 0
+#
+#     while i < len(left) and j < len(right):
+#         if left[i] < right[j]:
+#             sorted_lst.append(left[i])
+#             i += 1
+#         else:
+#             sorted_lst.append(right[j])
+#             j += 1
+#
+#     sorted_lst.extend(left[i:])
+#     sorted_lst.extend(right[j:])
+#     return sorted_lst
+#
+#
+# arry = [10,3,5,2,56,8,45,86,3]
+#
+# sorted_lst = merge_sort(arry)
+#
+# print(f'un sorted - {arry}\n'
+#       f'sorted List {sorted_lst}')
 
