@@ -85,6 +85,7 @@
 
 # материал лекции - https://metanit.com/python/tutorial/2.15.php
 
+print("hi")
 
 
 
