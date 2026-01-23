@@ -34,9 +34,31 @@
 #
 # print(f'sorted arry - {sorted_arry}')
 
+import time
 
+def benchmark(func):
+    def wrapper(*args, **kwargs):
+        # Фиксируем время начала
+        start_time = time.perf_counter()
+
+        # Выполняем саму функцию
+        result = func(*args, **kwargs)
+
+        # Фиксируем время окончания
+        end_time = time.perf_counter()
+
+        # Вычисляем разницу
+        run_time = end_time - start_time
+
+        print(f"Функция: {func.__name__}")
+        print(f"Время выполнения: {run_time:.4f} сек.")
+        print("-" * 30)
+
+        return result
+
+    return wrapper
 #Сортировка слиянием
-
+@benchmark
 def merge_sort(arr):
     if len(arr) <=1:
         return arr #базовый случай
@@ -46,6 +68,7 @@ def merge_sort(arr):
     right = merge_sort(arr[mid:])
 
     return merge(left,right)
+
 
 def merge(left, right):
     sorted_lst = []
@@ -70,3 +93,15 @@ print(f'sorted arr - {sorted_arr}')
 
 #ДЗ вам нужно сравнить временную сложность этих двух алгоритмов
 #  сколько памяти требуется на работу алгоритма (доп задание)
+
+
+
+
+# Пример использования
+@benchmark
+def fetch_data():
+    time.sleep(1.5)  # Имитация долгой работы
+    return "Данные получены"
+
+
+fetch_data()
