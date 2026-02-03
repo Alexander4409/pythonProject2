@@ -131,24 +131,24 @@ fn()
 
 
 #Решение
-# def protected_callback():
-#
-#     actually_password = input("Установите пароль: ")
-#
-#     def check_password():
-#         password_input = input("Введите пароль для входа: ")
-#         if password_input == actually_password:
-#             return "Доступ разрешен: Привет!"
-#         return "Ошибка: неверный пароль"
-#
-#     return check_password
-#
-# verify = protected_callback()
-#
-# while True:
-#     result = verify()
-#     print(result)
-#     if "Доступ разрешен" in result:
-#         break
+def protected_callback():
+
+    actually_password = input("Установите пароль: ")
+
+    def check_password():
+        password_input = input("Введите пароль для входа: ")
+        if password_input == actually_password:
+            return "Доступ разрешен: Привет!"
+        return "Ошибка: неверный пароль"
+
+    return check_password
+
+verify = protected_callback()
+
+while True:
+    result = verify()
+    print(result)
+    if "Доступ разрешен" in result:
+        break
 
 
