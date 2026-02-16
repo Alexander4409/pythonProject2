@@ -15,7 +15,7 @@
 #         print(f'Name: {self.name} Age: {self.age}')
 #         #Деструктор класса
 #     def __del__(self):
-#         print(f"Account with name: {self.name} deleted!")
+#         print(f"Account wi th name: {self.name} deleted!")
 #
 #
 #
@@ -31,8 +31,5 @@
 # принимающий в конструкторе длину и ширину или радиус.
 # Реализуйте метод area для вычисления площади и perimeter для периметра.
 # Рефлексия и думать над проектами !!!
-
-
-
 
 

@@ -29,7 +29,7 @@
 
 
 # работа с параметрами
-
-# double = lambda num: num * 2
 #
-# print(double(4))
+# power = lambda num,pow: num ** pow
+#
+# print(power(4,3))

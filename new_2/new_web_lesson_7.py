@@ -12,10 +12,10 @@
 #
 # say_hi()
 
-# power = lambda num: num*num
+# power = lambda num,pow: num**pow
 #
-# print(power(3))
-# print(power(5))
+# print(power(3,4))
+# print(power(5,2))
 
 #передача ламбда функции в качестве параметра
 # def do_operation (num_1,num_2, operation):
@@ -74,13 +74,15 @@
 #     print("By ", name)
 #
 #
+#
 # say_hi()
 # say_by()
+
 
 #Nonlocal
 
 # def out():
-#     num = 5
+#     num = 1
 #
 #     def inner():
 #         nonlocal num
@@ -94,7 +96,7 @@
 
 #Замыкания
 def out():
-    num = 1
+    num = 0
     def inner():
         nonlocal num
         num += 1
@@ -105,6 +107,10 @@ def out():
 
 fn = out()
 
+fn()
+fn()
+fn()
+fn()
 fn()
 fn()
 
@@ -131,24 +137,24 @@ fn()
 
 
 #Решение
-def protected_callback():
-
-    actually_password = input("Установите пароль: ")
-
-    def check_password():
-        password_input = input("Введите пароль для входа: ")
-        if password_input == actually_password:
-            return "Доступ разрешен: Привет!"
-        return "Ошибка: неверный пароль"
-
-    return check_password
-
-verify = protected_callback()
-
-while True:
-    result = verify()
-    print(result)
-    if "Доступ разрешен" in result:
-        break
+# def protected_callback():
+#
+#     actually_password = input("Установите пароль: ")
+#
+#     def check_password():
+#         password_input = input("Введите пароль для входа: ")
+#         if password_input == actually_password:
+#             return "Доступ разрешен: Привет!"
+#         return "Ошибка: неверный пароль"
+#
+#     return check_password
+#
+# verify = protected_callback()
+#
+# while True:
+#     result = verify()
+#     print(result)
+#     if "Доступ разрешен" in result:
+#         break
 
 

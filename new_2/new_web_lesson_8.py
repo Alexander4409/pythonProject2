@@ -40,7 +40,8 @@
 #     def output_func(*args):
 #         name = args[0]
 #         age = args[1]
-#         if age < 0: age = 1
+#         if age < 0:
+#             age = 1
 #         input_func(name, age)
 #     return output_func
 #

@@ -25,7 +25,7 @@
 #
 # do_operation(3,4, lambda num_1,num_2: num_1+num_2)
 # do_operation(5,2, lambda num_1,num_2: num_1-num_2)
-
+# *, /, **
 #Возвращения параметров
 
 # def select_operation(choice):
@@ -33,8 +33,7 @@
 #         return lambda num_1, num_2: num_1+num_2
 #     elif choice == 2:
 #         return lambda num_1, num_2: num_1-num_2
-#     else:
-#         return print(f"Error")
+#
 #
 # operation = select_operation(1)
 # print(operation(3,4))
@@ -90,8 +89,7 @@
 
 #global
 
-# name = "John Doe"
-#
+
 # def say_hi():
 #     global name
 #     name = "Mary Doe" # Скрытие глобального значения
@@ -102,6 +100,7 @@
 #     print(f"Bye {name}")
 #
 # say_hi()
+# name = "John Doe"
 # say_bye()
 
 #nonlocal
@@ -116,8 +115,13 @@
 #     num = 10
 #
 #     def inner():
-#         nonlocal num
 #         num = 25
+#         def inner2():
+#             nonlocal num
+#             num = 1
+#             print(num)
+#         inner2()
+#
 #         print(num)
 #
 #     inner()
@@ -135,25 +139,25 @@
 
 3 вложенная функция, которая использует переменные и параметры внешней функции'''
 
-def outer():
-    num = 1
-
-    def inner():
-        nonlocal num
-        num += 1
-        print(num)
-
-    return inner
-
-fn = outer()
-
-fn()
-fn()
-fn()
-fn()
-fn()
-fn()
-fn()
+# def outer():
+#     num = 0
+#
+#     def inner():
+#         nonlocal num
+#         num += 1
+#         print(num)
+#
+#     return inner
+#
+# fn = outer()
+#
+# fn()
+# fn()
+# fn()
+# fn()
+# fn()
+# fn()
+# fn()
 
 # https://metanit.com/python/tutorial/2.19.php
 

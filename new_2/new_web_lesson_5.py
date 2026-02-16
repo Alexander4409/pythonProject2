@@ -24,9 +24,11 @@
 # Локальные функции
 # def print_messages():
 #     #определение локальных функций
-#     def say_hi():print("Hi")
+#     def say_hi():
+#         print("Hi")
 #
-#     def say_by():print("Bye")
+#     def say_by():
+#         print("Bye")
 #
 #     say_by()
 #     say_hi()
@@ -34,6 +36,7 @@
 # print_messages()
 
 #Организация работы программы
+
 
 # def main():
 #     say_bye()
