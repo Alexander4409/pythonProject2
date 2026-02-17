@@ -45,7 +45,7 @@
 # print(user_data_info(23, "John Doe", "Software developer"))
 
 
-#Организация программы и функция main
+# Организация программы и функция main
 # def main():
 #     say_hi()
 #     say_bye()
