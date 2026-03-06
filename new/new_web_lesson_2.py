@@ -6,7 +6,7 @@
 # num_dot = 4.1
 # num_1 = 1
 # стиль написания переменных - low snake case
-#
+#foffolfofo
 #
 #FirstDay = 1 - camel case
 #
