@@ -1,0 +1,1 @@
+# https://slurm.io/blog/tpost/7r3ag66121-prompt-injection-samaya-sereznaya-ugroza
