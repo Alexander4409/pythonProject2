@@ -40,14 +40,3 @@ my_delivery = service.get_transport("fast")
 my_delivery1 = service.get_transport("heavy")
 print(my_delivery1.delivery())
 
-# Абстрактная фабрика
-
-
-
-#Структурные
-
-
-
-
-
-#Поведенческие паттерны
