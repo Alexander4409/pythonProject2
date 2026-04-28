@@ -6,7 +6,6 @@
 #
 # num_2 = 15
 # print(hex(id(num_2)))
-from tkinter.font import names
 
 
 # класс - это шаблон благодаря которому мы можем перенести некоторые
