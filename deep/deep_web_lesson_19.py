@@ -88,36 +88,36 @@
 
 #Адаптер
 
-class EmailNotifications:
-    def send(self,title, text):
-        print(f"Email: {title} --> {text}")
-
-class SMSLib:
-    def send_sms_message(self,phone, text_body):
-        print(f"SMS on: {phone} --> {text_body}")
-
-
-class SmsAdapter:
-    def __init__(self, sms_service, phone_number):
-        self.sms_service = sms_service
-        self.phone_number = phone_number
-
-    def send(self,title,text):
-        text_body = f"{title}:{text}"
-        self.sms_service.send_sms_message(self.phone_number,text_body)
-
-
-
-def notify_user(notifier):
-    notifier.send("Delivery Status", "Your dish is ready!")
-
-
-email = EmailNotifications()
-notify_user(email)
-
-exernal_lib = SMSLib()
-adapter = SmsAdapter(exernal_lib, "+000000000")
-notify_user(adapter)
+# class EmailNotifications:
+#     def send(self,title, text):
+#         print(f"Email: {title} --> {text}")
+#
+# class SMSLib:
+#     def send_sms_message(self,phone, text_body):
+#         print(f"SMS on: {phone} --> {text_body}")
+#
+#
+# class SmsAdapter:
+#     def __init__(self, sms_service, phone_number):
+#         self.sms_service = sms_service
+#         self.phone_number = phone_number
+#
+#     def send(self,title,text):
+#         text_body = f"{title}:{text}"
+#         self.sms_service.send_sms_message(self.phone_number,text_body)
+#
+#
+#
+# def notify_user(notifier):
+#     notifier.send("Delivery Status", "Your dish is ready!")
+#
+#
+# email = EmailNotifications()
+# notify_user(email)
+#
+# exernal_lib = SMSLib()
+# adapter = SmsAdapter(exernal_lib, "+000000000")
+# notify_user(adapter)
 
 
 
